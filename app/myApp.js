@@ -13,8 +13,10 @@ function getPrime(n) {
   }
   else{
     for (i=1; i<=n; i++) {
+      //initialize counter to 0
       var counter = 0;
       for (num = i; num>=1; num--) {
+        //if i remainder num is equal to 0, increment counter
         if(i%num===0) {
           counter = counter + 1;
         }
